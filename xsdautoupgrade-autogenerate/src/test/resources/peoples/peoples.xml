@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  <!DOCTYPE People SYSTEM "peoples.dtd" > -->
+<People xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="schema.xsd">
+ <Person Type="Personal">
+  <Name>
+   <FirstName>Fred</FirstName>
+   <FamilyName>Bloggs</FamilyName>
+   <Title Position="After">MISTC</Title>
+  </Name>
+  <Address>
+   <Street1>22 Chancery Lane</Street1>
+   <City>London</City>
+   <Country>England</Country>
+   <ZipCode>SW17 4QP</ZipCode>
+  </Address>
+  <PhoneNumber>44 1 800 3451</PhoneNumber>
+  <FaxNumber>44 12 446 3382</FaxNumber>
+  <Email>fbloggs@hk.co.uk</Email>
+ </Person>
+ <Person>
+  <Name>
+   <FirstName>Jon</FirstName>
+   <MiddleName>Jefferson</MiddleName>
+   <FamilyName>Spencer</FamilyName>
+   <Title>Dr.</Title>
+  </Name>
+  <Address>
+   <Street1>El Camino Real 44621</Street1>
+   <City>Sunnyvale</City>
+   <State>California</State>
+   <Country>USA</Country>
+   <ZipCode>915144</ZipCode>
+  </Address>
+  <PhoneNumber>1 650 445 1273</PhoneNumber>
+  <FaxNumber>1 405 227 1877</FaxNumber>
+  <Email>jdspencr@hiflier.com</Email>
+ </Person>
+</People>

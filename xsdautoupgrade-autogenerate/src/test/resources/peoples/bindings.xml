@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings
+    version="1.0"
+    xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	xmlns:extends="gdimitriu.utils/extends"
+	xmlns:implements="gdimitriu.utils/implements"
+    jxb:extensionBindingPrefixes="xjc inherit"
+    >
+	<jxb:bindings schemaLocation="schema.xsd" node="/xs:schema">
+		<jxb:bindings node="//xs:complexType[@name='person']">
+    		<extends:extends name="java.util.Observable" />
+     		<implements:implements name="java.io.Serializable" />
+		</jxb:bindings>
+	</jxb:bindings>
+</jxb:bindings>
+    

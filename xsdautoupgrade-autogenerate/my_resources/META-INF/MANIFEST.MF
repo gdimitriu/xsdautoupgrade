@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+
+Class-Path: ./lib/jaxb-api.jar ./lib/jaxb-core.jar ./lib/jaxb-jxc.jar ./lib/jaxb-impl.jar ./lib/jaxb-xjc.jar
