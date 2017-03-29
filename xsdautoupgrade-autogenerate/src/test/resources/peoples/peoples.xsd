@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+ <xs:element name="People">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="Person" type="person" minOccurs="0" maxOccurs="unbounded"/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+ <xs:complexType name="person">
+  <xs:sequence>
+   <xs:element name="Name" type="name" minOccurs="1" maxOccurs="1"/>
+   <xs:element name="Address" type="address" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="PhoneNumber" type="xs:string" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="FaxNumber" type="xs:string" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="Email" type="xs:string" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="Notes" type="xs:string" minOccurs="0" maxOccurs="1"/>
+  </xs:sequence>
+  <xs:attribute name="Type" type="Type" default="Business"/>
+ </xs:complexType>
+ <xs:simpleType name="Type">
+  <xs:restriction base="xs:string">
+   <xs:enumeration value="Business"/>
+   <xs:enumeration value="Personal"/>
+  </xs:restriction>
+ </xs:simpleType>
+
+ <xs:complexType name="name">
+  <xs:sequence>
+   <xs:element name="FirstName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="MiddleName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="FamilyName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+   <xs:element name="Title" type="Title" minOccurs="0" maxOccurs="1"/>
+  </xs:sequence>
+ </xs:complexType> 
+ 
+ <xs:complexType name="Title">
+   <xs:simpleContent>
+    <xs:extension base="xs:string">
+     <xs:attribute name="Position" type="Position" default="Before"/>
+    </xs:extension>
+   </xs:simpleContent>
+   
+ </xs:complexType>
+
+ <xs:simpleType name="Position">
+   <xs:restriction base="xs:string">
+    <xs:enumeration value="Before"/>
+    <xs:enumeration value="After"/>
+   </xs:restriction>
+ </xs:simpleType>
+
+ <xs:complexType name="address">
+  <xs:sequence>
+   <xs:element name="Street1" type="xs:string" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="Street2" type="xs:string" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="City" type="xs:string" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="State" type="xs:string" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="Country" type="xs:string" minOccurs="0" maxOccurs="1"/>
+   <xs:element name="ZipCode" type="xs:string" minOccurs="0" maxOccurs="1"/>
+  </xs:sequence>
+ </xs:complexType>
+</xs:schema>
