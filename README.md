@@ -8,6 +8,7 @@ OBS:
 - This project need jdk 1.8 for compile and runtime.
 
 - To run the unitests from eclipse the maven update is need and then the jar from xsdautoupgrade-autogenerate/lib and the xsdautoupgrade-autogenerate-1.0.0-SNAPSHOOT.jar should be put into the classpath. 
+- The name of the schema should be schema.xsd if the schema is generated using streams.
 
 The version 1.0.0-SNAPSHOT has only unitests:
 
